@@ -1,7 +1,7 @@
 #include "stl_vector.h"
 #include "test_obj.h"
 
-int main()
+int main_vec()
 {
 	// 使用分配器申请内存
 	//std::vector<int>a;

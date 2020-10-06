@@ -117,11 +117,13 @@
   <ItemGroup>
     <ClInclude Include="stl_common_define.h" />
     <ClInclude Include="stl_list.h" />
+    <ClInclude Include="stl_slist.h" />
     <ClInclude Include="stl_vector.h" />
     <ClInclude Include="test_obj.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test_list.cpp" />
+    <ClCompile Include="test_slist.cpp" />
     <ClCompile Include="test_vector.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

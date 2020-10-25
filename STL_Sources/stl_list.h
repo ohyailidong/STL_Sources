@@ -1,8 +1,6 @@
 #ifndef STL_LIST_H
 #define STL_LIST_H
 
-#include <iostream>
-#include <xmemory>
 #include "stl_common_define.h"
 
 template <typename InputIterator>
@@ -90,7 +88,7 @@ namespace STL
 		//在position前面insert
 		iterator insert(iterator position, const Ty& x)
 		{
-			linktype tmp = creat_node(x);
+			linktype tmp = create_node(x);
 			//调整双向指针，使tmp插入进去
 			tmp->_m_next = position.node;
 			tmp->_m_prev = position.node->_m_prev;
@@ -188,7 +186,7 @@ namespace STL
 			node->_m_prev = node;
 			node->_m_next = node;
 		}
-		linktype creat_node(const Ty& x)
+		linktype create_node(const Ty& x)
 		{
 			linktype p = get_node();
 			construct(&p->data, x);

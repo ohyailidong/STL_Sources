@@ -1,6 +1,6 @@
 #include "stl_slist.h"
 #include "test_obj.h"
-//int main_slist()
+
 int main()
 {
 	//ÉêÇë½ÚµãÄÚ´æ²âÊÔ

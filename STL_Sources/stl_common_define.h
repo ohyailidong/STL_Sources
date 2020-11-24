@@ -4,6 +4,9 @@
 #include <iostream>
 #include <xmemory>
 
+#define NAMESPACE_STL_BEGIN namespace STL{
+#define NAMESPACE_STL_END }
+
 template<class T1, class T2>
 inline void construct(T1*p, const T2& value)
 {

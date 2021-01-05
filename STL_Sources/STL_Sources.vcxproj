@@ -119,14 +119,19 @@
   <ItemGroup>
     <ClInclude Include="stl_common_define.h" />
     <ClInclude Include="stl_list.h" />
+    <ClInclude Include="stl_map.h" />
     <ClInclude Include="stl_rbtree.h" />
+    <ClInclude Include="stl_set.h" />
     <ClInclude Include="stl_slist.h" />
     <ClInclude Include="stl_vector.h" />
     <ClInclude Include="test_obj.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test_list.cpp" />
-    <ClCompile Include="test_rbtree.cpp" />
+    <ClCompile Include="test_set.cpp" />
+    <ClCompile Include="test_rbtree.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="test_slist.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>

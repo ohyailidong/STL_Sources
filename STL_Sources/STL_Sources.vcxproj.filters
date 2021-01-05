@@ -33,6 +33,12 @@
     <ClInclude Include="stl_rbtree.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="stl_set.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stl_map.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test_list.cpp">
@@ -45,6 +51,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="test_rbtree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test_set.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

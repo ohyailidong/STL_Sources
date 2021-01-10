@@ -13,18 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\TEST">
+      <UniqueIdentifier>{fa99021c-0398-4680-ac94-b89e0c89a124}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stl_vector.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="stl_list.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="stl_common_define.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="test_obj.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="stl_slist.h">
@@ -38,6 +35,21 @@
     </ClInclude>
     <ClInclude Include="stl_map.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stl_hashset.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stl_hashtable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stl_hashmap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stl_common_define.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="test_obj.h">
+      <Filter>源文件\TEST</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -54,6 +66,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="test_set.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

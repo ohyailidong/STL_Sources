@@ -118,6 +118,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="stl_common_define.h" />
+    <ClInclude Include="stl_hashmap.h" />
+    <ClInclude Include="stl_hashtable.h" />
+    <ClInclude Include="stl_hashset.h" />
     <ClInclude Include="stl_list.h" />
     <ClInclude Include="stl_map.h" />
     <ClInclude Include="stl_rbtree.h" />
@@ -127,6 +130,7 @@
     <ClInclude Include="test_obj.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="test_list.cpp" />
     <ClCompile Include="test_set.cpp" />
     <ClCompile Include="test_rbtree.cpp">

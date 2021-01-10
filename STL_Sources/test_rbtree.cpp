@@ -1,6 +1,6 @@
 #include "stl_rbtree.h"
 
-int main()
+int main1111111()
 {
 	STL::rb_tree<int, int, std::identity<int>, std::less<int>> intRb_tree;
 	//****************************test int******************************************

@@ -3,6 +3,8 @@
 
 #include <iostream>
 #include <xmemory>
+#include <assert.h>
+#include <algorithm>
 
 #define NAMESPACE_STL_BEGIN namespace STL{
 #define NAMESPACE_STL_END }
@@ -21,7 +23,7 @@ inline void destory(T* pointer)
 template<class Itetrator>
 inline void destory(Itetrator first, Itetrator last)
 {
-	//_Destroy_range(first, last);
+	std::_Destroy_range(first, last);
 }
 
 #endif

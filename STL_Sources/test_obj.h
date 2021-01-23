@@ -5,8 +5,9 @@
 class test_class_t_obj
 {
 public:
-	test_class_t_obj(int len) :m_MallocLen(len)
+	test_class_t_obj(int len=100) :m_MallocLen(len)
 	{
+		std::cout << "ÉêÇëÄÚ´æ\n";
 		m_ptr = (void*)new int[len];
 		for (size_t i = 0; i < len; i++)
 		{

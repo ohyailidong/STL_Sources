@@ -1,9 +1,6 @@
 #ifndef STL_VECTOR_H
 #define STL_VECTOR_H
 
-#include <iostream>
-#include <xmemory>
-#include <algorithm>
 #include "stl_common_define.h"
 
 namespace STL
@@ -39,6 +36,7 @@ namespace STL
 		}
 		~Vector()
 		{
+			std::cout << "Vector Îö¹¹\n";
 			destory(start, finish);
 			if (start)
 			{
@@ -53,7 +51,8 @@ namespace STL
 		size_type capacity() { return size_type(end_of_storage - begin()); }
 		bool empty() { return (begin() == end()); }
 		reference operator[](size_type n) { return *(begin() + n); }
-
+		T front() { assert(size() > 0); return *begin(); }
+		T back() { assert(size() > 0); return *(end() - 1); }
 		void push_back(const T& x)
 		{
 			if (finish != end_of_storage)
@@ -73,6 +72,7 @@ namespace STL
 		}
 		iterator erase(iterator first, iterator last)
 		{
+			assert(first >= begin() && last <= end() && !(last < first));
 			iterator i = std::copy(last, finish, first);
 			destory(i, finish);
 			finish = finish - (last - first);
@@ -88,6 +88,11 @@ namespace STL
 			destory(finish);
 			return position;
 		}
+		void insert(iterator position, const T& x)
+		{
+			insert(position, 1, x);
+		}
+
 		void insert(iterator position, size_type n, const T& x)
 		{
 			if (n < 1)return;
@@ -188,13 +193,13 @@ namespace STL
 				}
 				catch (const std::exception&)
 				{
-
+					assert(false);
 				}
 				catch (...)
 				{
-
+					assert(false);
 				}
-
+				destory(begin(), end());
 				deallocate();
 				start = new_start;
 				finish = new_finish;

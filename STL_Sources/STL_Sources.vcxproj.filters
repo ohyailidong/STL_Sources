@@ -51,12 +51,15 @@
     <ClInclude Include="test_obj.h">
       <Filter>源文件\TEST</Filter>
     </ClInclude>
+    <ClInclude Include="test_vector.h">
+      <Filter>源文件\TEST</Filter>
+    </ClInclude>
+    <ClInclude Include="test_base.h">
+      <Filter>源文件\TEST</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test_list.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="test_vector.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="test_slist.cpp">

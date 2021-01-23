@@ -1,7 +1,7 @@
 #include "stl_slist.h"
 #include "test_obj.h"
 
-int main()
+int main11111111111()
 {
 	//ÉêÇë½ÚµãÄÚ´æ²âÊÔ
 	//STL::sListNode<int>pnode;

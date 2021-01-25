@@ -62,9 +62,6 @@
     <ClCompile Include="test_list.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="test_slist.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="test_rbtree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -73,6 +70,9 @@
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test_slist.h">
+      <Filter>源文件\TEST</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

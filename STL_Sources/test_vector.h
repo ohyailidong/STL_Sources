@@ -7,27 +7,26 @@
 class Test_Vector:public TestBase
 {
 public:
-	virtual void Run();
+	virtual void Run()
+	{
+		int sizevec = sizeof(std::vector<int>);
+		sizevec = sizeof(std::vector<std::shared_ptr<test_class_t_obj>>);
+		sizevec = sizeof(STL::Vector<int>);
+		sizevec = sizeof(STL::Vector<std::shared_ptr<test_class_t_obj>>);
+
+		//stl_vector_fun();
+		my_stl_vector_fun();
+		// 使用分配器申请内存
+		int *p = nullptr;
+		std::allocator<int> alloca1;
+		p = alloca1.allocate(1);
+		*p = 4;
+		alloca1.deallocate(p, 1);
+	}
 private:
 	void stl_vector_fun();
 	void my_stl_vector_fun();
 };
-void Test_Vector::Run()
-{
-	int sizevec = sizeof(std::vector<int>);
-	sizevec = sizeof(std::vector<std::shared_ptr<test_class_t_obj>>);
-	sizevec = sizeof(STL::Vector<int>);
-	sizevec = sizeof(STL::Vector<std::shared_ptr<test_class_t_obj>>);
-
-	//stl_vector_fun();
-	my_stl_vector_fun();
-	// 使用分配器申请内存
-	int *p = nullptr;
-	std::allocator<int> alloca1;
-	p = alloca1.allocate(1);
-	*p = 4;
-	alloca1.deallocate(p, 1);
-}
 
 void Test_Vector::stl_vector_fun()
 {

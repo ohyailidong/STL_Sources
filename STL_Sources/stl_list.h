@@ -54,7 +54,12 @@ namespace STL
 		self& operator--() { node = (*node)._m_prev; return *this; }
 		//postfixform --
 		self operator--(int) { self tmp = *this; --*this; return tmp; }
-
+		self& operator+ (int n)
+		{
+			for (int i = 0; i < n; i++)
+				++(*this);
+			return *this;
+		}
 	public:
 		linktype node;
 	};
@@ -169,7 +174,12 @@ namespace STL
 				transfer(begin(), old, first);
 			}
 		}
-
+		Ty& operator[](int index) {
+			auto iter = begin();
+			for (int i = 0; i < index; ++i)
+				iter++;
+			return (iter.node)->data;
+		}
 	protected:
 		linktype get_node()
 		{

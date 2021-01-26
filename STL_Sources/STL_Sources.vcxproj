@@ -133,7 +133,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="test_list.cpp" />
+    <ClCompile Include="test_list.h" />
     <ClCompile Include="test_set.cpp" />
     <ClCompile Include="test_rbtree.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
